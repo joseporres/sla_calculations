@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    image: 'poke:latest'
+    container_name: poke
+    ports:
+      - '5000:5000'
+    build: 
+      context: .
+      dockerfile: Dockerfile
